@@ -11,3 +11,5 @@ get('/') do
     end
      erb :index
 end
+
+<h1>Hola : <%=@nombre%></h1>
