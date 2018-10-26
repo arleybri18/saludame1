@@ -3,11 +3,11 @@ require 'sinatra'
 
 get('/') do
     if params["nombre"] == ""
-        @name = "Desconocido!!"
+        @nombre = "Desconocido!!"
     elsif params == {}
-        @name = "Desconocido!!"
+        @nombre = "Desconocido!!"
     else 
-        @name = params["nombre"]
+        @nombre = params["nombre"]
     end
      erb :index
 end
